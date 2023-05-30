@@ -1,0 +1,11 @@
+In ES2015:
+const PI = 3.14;
+Typing PI = 42 will now produce an error.
+
+1. var has a window/global scope and can be reassigned and redeclared. let has a block scope, it can be reassigned but not redeclared. Also, let prevents hoisting.
+
+2. const does not allow hoisting and cannot be reassigned or redeclared.
+
+3. The value of a const variable cannot be changed or redeclared, but the value of a let variable can be changed.
+
+4. Hoisting is how JS behaved when var was the only way a variable could be declared. You can access a var variable before it is even defined and no error will be thrown. You cannot say "let name;", and then immediately try to access it before you initialize name, but you can say "var name;" and then do console.log(name); without defining name as a string.
